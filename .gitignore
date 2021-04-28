@@ -1,0 +1,5 @@
+*.pyc
+drf_vuejs/__pycache__/__init__.cpython-39.pyc
+drf_vuejs/__pycache__/settings.cpython-39.pyc
+drf_vuejs/__pycache__/urls.cpython-39.pyc
+drf_vuejs/__pycache__/wsgi.cpython-39.pyc
