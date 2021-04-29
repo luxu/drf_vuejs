@@ -1,3 +1,11 @@
 from django.contrib import admin
 
-# Register your models here.
+from core.models import Prisoner
+
+class PrisonerAdmin(admin.ModelAdmin):
+	fields = (
+		'name',
+		'matriculation'
+	)
+
+admin.site.register(Prisoner, PrisonerAdmin)

@@ -4,7 +4,7 @@
       <q-toolbar>
 
         <q-toolbar-title>
-          Penitenciária de Presidente Prudente
+          Penitenciária de {{ title }}
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-// import HelloWorld from './components/Index.vue'
+
 import Inicio from './components/Index.vue'
 
 export default {
@@ -28,7 +28,7 @@ export default {
   },
   data () {
     return {
-
+      title: 'Alcatraz',
     }
   }
 }
