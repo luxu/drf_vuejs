@@ -16,8 +16,8 @@
       <q-separator dark />
 
       <q-card-actions class="justify-center">
-        <q-btn flat>Inclusão</q-btn>
-        <q-btn flat>Listagem</q-btn>
+        <q-btn flat>Raio 1</q-btn>
+        <q-btn flat>Raio 2</q-btn>
       </q-card-actions>
     </q-card>
 
@@ -27,12 +27,9 @@
 <script>
 
   import axios from 'axios';
-  import Inclusao from "@/components/Inclusao";
-  import Listagem from "@/components/Listagem";
 
   export default {
     name: 'App',
-    components: Inclusao, Listagem,
     data() {
         return {
             username: null,

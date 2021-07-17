@@ -25,6 +25,6 @@ class PrisonerSerializer(serializers.ModelSerializer):
             'id',
             'name',
             'matriculation',
-            'created_at',
-            'updated_at',
+            'included',
+            'excluded',
         )

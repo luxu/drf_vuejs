@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 
 
@@ -9,6 +11,14 @@ class Prisoner(models.Model):
 	matriculation = models.CharField(
 		verbose_name='Matrícula',
 		max_length=9
+	)
+	included = models.DateField(
+		verbose_name='Incluído',
+		null=True, blank=True
+	)
+	excluded = models.DateField(
+		verbose_name='Excluído',
+		null=True, blank=True
 	)
 	created_at = models.DateTimeField(
 		verbose_name='Criado em',
@@ -22,8 +32,9 @@ class Prisoner(models.Model):
 	)
 
 	def __str__(self):
-		return f'{self.matriculation} - {self.name}'
+		return f'{self.name} - {self.matriculation}'
 
 	class Meta:
 		verbose_name='Sentenciado'
 		verbose_name_plural='Sentenciados'
+		ordering=['included']
